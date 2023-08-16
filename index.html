@@ -95,10 +95,15 @@
 
     <!-- Custom styles for this template -->
     <link href="./styles/cover.css" rel="stylesheet" />
+
+    <!-- Contact form css -->
+    <link rel="stylesheet" href="./styles/contact-form.css">
+    
+    <!-- Home made css -->
     <link rel="stylesheet" href="./styles/style.css">
   </head>
 
-  <body class="d-flex flex-column text-center" cz-shortcut-listen="true">
+  <body class="d-flex flex-column text-center mb-5 pb-3" cz-shortcut-listen="true">
     <!-- Lading Screen -->
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
 
@@ -130,8 +135,8 @@
         <h1 class="text-white">Thème</h1>
 
         <p class="lead text-white" style="text-transform:lowercase;">
-            CADRE DE CONCERTATION SUR LA CONTRIBUTION 
-            MOYENNE a L'EducaTION ENFANTS DÉPLACÉS INTERNES OU BURKINA FASO
+            Cadre de concertation sur la contribution 
+            moyenne a l'éducation des enfants déplacés internes au Burkina Faso.
         </p>
         <p class="lead">
           <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white"
@@ -141,9 +146,60 @@
       </main>
     </div>
 
-        <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <h1>Reservation</h1>
+    <!-- CONTACT FORM -->
+    <div class="contact-form bg-success-subtle ">
+        <div class="wrapper container" >
+            <form action="" id="wizard">
+                <!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+                        <div class="image-holder">
+                            <img src="./images/children_in_school.jpg" alt="">
+                        </div>
+                        <div class="form-content" >
+                            <div class="form-header">
+                                <h3>Réservation</h3>
+                            </div>
+                            <p>Remplis ce formulaire pour assurer ta place.</p>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Nom" class="form-control">
+                                </div>
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Prénom" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Addresse e-mail" class="form-control">
+                                </div>
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Numéro de téléphone" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Qui t'a reféré?" class="form-control">
+                                </div>
+                                <div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+
+                                </div>
+                            </div>
+                            <!-- <div class="checkbox-circle">
+                                <label>
+                                    <input type="checkbox" checked> Nor again is there anyone who loves or pursues or desires to obtaini.
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div> -->
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-5 fs-5">Réserve ta place</button>
+                    </div>
+                </section>
+            </form>
         </div>
+        
+    </div>
 
 
     <!-- bootstrap js -->
