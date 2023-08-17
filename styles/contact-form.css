@@ -43,7 +43,6 @@
     max-width: 100%; }
   
   .wrapper {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -119,7 +118,7 @@
   
   .image-holder {
     width: 40%;
-    height: 521px; }
+    height:100px; }
   
   .form-content {
     width: 60%;
@@ -366,7 +365,7 @@
       max-width: 768px; }
   
     .image-holder img {
-      height: 521px;
+      height: 600px;
       object-fit: cover; } }
   @media (max-width: 767px) {
     .inner {
@@ -394,7 +393,8 @@
         margin-bottom: 18px; }
   
     .wrapper {
-      height: 1201px;
+      margin-top: auto;
+      height: fit-content;
       background: none; }
   
     .checkbox-circle {
@@ -413,4 +413,3 @@
       bottom: 3%; } }
   
   /*# sourceMappingURL=style.css.map */
-  

@@ -18,7 +18,7 @@
 
 .cover-container {
   max-width: 42em;
-  max-height: 50em;
+  max-height: 0 !important;
   background-image: url("smiling_girl_2.jpg");
   background-size: cover;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 1);

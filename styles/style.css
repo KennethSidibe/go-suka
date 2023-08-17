@@ -1,8 +1,37 @@
+.contact-form {
+    padding-top: 20vh;
+}
+
+@media (max-width:770px) {
+    
+    .contact-form {
+        padding-top: 10vh;
+    }
+    .form-check-label {
+        font-size: 3vw;
+    }
+
+    .form-reserv-spot {
+        margin-top: 80vh;
+    }
+
+    .form-title-spot {
+        font-size: 5vw;
+    }
+
+    .infoline {
+        height: 30vw;
+        width: 100vw;
+    }
+
+    body {
+        width: 100vw;
+    }
+
+}
 
 
-
-
-
-
-/* CONTACT FORM CSS */
-
+.infoline {
+    height: 30vh;
+    width: 100vw;
+}
