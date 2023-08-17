@@ -155,7 +155,7 @@
                 <section>
                     <div class="inner">
                         <div class="image-holder">
-                            <img src="./images/children_in_school.jpg" alt="">
+                            <img src="images/children_in_school.jpg" alt="">
                         </div>
                         <div class="form-content" >
                             <div class="form-header">

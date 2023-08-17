@@ -19,13 +19,16 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 $mail->Username = "sidibekagaks@gmail.com";
-$mail->Password = "A$j5xi?E!!bC!qhAi8E?TKe6FyDbfdB$BgNri@!n";
+$mail->Password = 'ewdonrdkhkkxwcrx';
 
 $mail->setFrom($email, $name);
 $mail->addAddress("sidibekagaks@gmail.com", "Dave");
 
-$mail->Subject = "Reservation pour " + $name;
-$mail->Body = $firstName + " est enregistre pour la conference";
+$mail->Subject = "Reservation pour " . $name . "," . $firstName ;
+$mail->Body = "$name, $firstName a reserver son spot, Voici ces informations : 
+    Numero de telephone : $phoneNumber
+    email : $email
+    gender : $gender";;
 
 $mail->send();
 
