@@ -7,6 +7,8 @@
     <meta name="description" content="" />
     <title>Scolarisons les Enfants burkinabes</title>
 
+    <link rel="icon" type="image/x-icon" href="./images/logo_pdf.png">
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
@@ -105,7 +107,7 @@
 
   <body class="d-flex flex-column text-center mb-5 pb-3" cz-shortcut-listen="true">
     <!-- Lading Screen -->
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column " id="conference-details">
 
       <header class="mb-auto mt-2">
         <div>
@@ -114,10 +116,10 @@
             <a
               class="nav-link fw-bold py-1 px-0 active"
               aria-current="page"
-              href="#"
+              href="#conference-details"
               >Home</a
             >
-            <a class="nav-link fw-bold py-1 px-0" href="#">Réservation</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#save-spot-form">Réservation</a>
             <a class="nav-link fw-bold py-1 px-0" href="#">Infoline</a>
           </nav>
         </div>
@@ -139,7 +141,7 @@
             moyenne a l'éducation des enfants déplacés internes au Burkina Faso.
         </p>
         <p class="lead">
-          <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white"
+          <a href="#save-spot-form" class="btn btn-lg btn-light fw-bold border-white bg-white"
             >Réserve ta place</a
           >
         </p>
@@ -147,7 +149,7 @@
     </div>
 
     <!-- CONTACT FORM -->
-    <div class="contact-form bg-success-subtle ">
+    <div class="contact-form bg-success-subtle " id="save-spot-form">
         <div class="wrapper container" >
             <form method="post" action="send-email.php" id="wizard">
                 <!-- SECTION 1 -->
