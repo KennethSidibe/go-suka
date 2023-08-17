@@ -91,6 +91,7 @@
         .cover-container {
             max-height: 200vh !important;
         }
+}
     </style>
 
     <!-- Custom styles for this template -->
@@ -126,12 +127,10 @@
             <h4 class="text-white px-4 fw-light">Date : Vendredi 28 Août</h4>
             <h4 class="text-white px-4 fw-light mb-5">Time : 8h30~11h30</h4>
 
-            <div class="container bg-white my-5 py-4 rounded-5" style="width: 60vw;" >
+            <div class="container bg-white my-5 py-4 rounded-5 conference-link" style="width: auto;" >
                 <h4 class="text-dark px-4 mb-5">Lien de la conférence virtuelle</h4>
                 <h5 class="text-dark">http://bit.ly/3EjxOC1</h5>
             </div>
-
-
 
             <h1 class="text-white">Thème</h1>
 
