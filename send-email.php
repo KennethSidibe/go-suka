@@ -42,6 +42,8 @@ $mail->Port = 587;
 $mail->Username = "gosukabfbot@gmail.com";
 $mail->Password = 'rhmmqvatvjqqxpfj';
 
+
+
 $mail->setFrom("gosukabfbot@gmail.com", "Go-Suka Bot");
 $mail->addAddress("gosukabfbot@gmail.com", "botRegistration");
 
@@ -56,18 +58,19 @@ $mail->Body = "$name, $firstName a reserver son spot, Voici ces informations :
     ";
 
 $mail->send();
+$mail->clearAddresses();
 
 $mail->setFrom("gosukabfbot@gmail.com", "Go Suka");
-$mail->addAddress("sidibekagaks@gmail.com", $firstName);
+$mail->addAddress($email, $firstName);
 
 $mail->Subject = "Merci pour ta reservation " . $name . "!";
-$mail->Body = "Nous avons bien recu ton formulaire tout rempli, Merci à toi et on t'attend le Vendredi. 
+$mail->Body = "Nous avons bien recu ton formulaire tout rempli, Merci a toi et on t'attend le Vendredi. 
                            
-Voici le lien de la conférence si tu décide d'assister à celle en ligne :
+Voici le lien de la conference si tu decide d'assister à celle en ligne :
 https://us06web.zoom.us/j/81818547681?pwd=d21ZTXQ5Wm9EN1E5UmZ3RkIwYTgwZz09
 
 
-Bonne journée!
+Bonne journee!
 ";
 
 $mail->send();

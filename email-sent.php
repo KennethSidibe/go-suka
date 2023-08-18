@@ -39,7 +39,7 @@
     <div class="px-1 py-5 my-5 text-center">
         <h1 class="display-5 fw-bold text-body-emphasis"> Merci, <?php echo ucfirst($name) ?> </h1>
         <div class="mx-auto">
-            <p class="lead mb-4 pb-5">On a bien noté ton nom pour la réservation. Merci encore! <br> Le lien de la conférence suivra dans ta boite e-mail</p>
+            <p class="lead mb-4 pb-5">On a bien noté ton nom pour la réservation. Merci encore! <br> Un E-mail de confirmation suivra dans ta boite e-mail</p>
 
         </div>
     </div>
