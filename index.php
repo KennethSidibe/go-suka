@@ -175,7 +175,7 @@
 
         <div class="me-md-5">
             <h1 class="text-white px-4 text-end pt-lg-4">Conférence</h1>
-            <h4 class="text-white px-4 fw-light text-end">Date : Vendredi 28 Août</h4>
+            <h4 class="text-white px-4 fw-light text-end">Date : Vendredi 18 Août</h4>
             <h4 class="text-white px-4 fw-light mb-5 text-end pb-lg-5">Time : 8h30~11h30</h4>
         </div>
 
