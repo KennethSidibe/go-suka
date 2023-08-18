@@ -90,8 +90,8 @@
 
         .cover-container {
             max-height: 200vh !important;
+            max-width: 100vw !important;
         }
-}
     </style>
 
     <!-- Custom styles for this template -->
@@ -102,46 +102,100 @@
 
     <!-- Home made css -->
     <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+        @media (min-width: 992px) {
+            .cover-container {
+                max-width: 100vw;
+                padding: 4vw 5vw !important;
+            }
+
+            .go-suka-title {
+                font-size: 2.5vw;
+            }
+            .navbar-text-head {
+                font-size: 1.15vw;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .save-spot-lg-btn {
+                display: none;
+                visibility: hidden;
+            }
+            .line-break-small {
+                display: none;
+                visibility: hidden;
+            }
+            
+            
+        }
+        @media(min-width:768px) {
+            .navbar-container-head {
+                display: flex;
+            }
+            .line-break-large {
+                display: none;
+            }
+
+            .theme-text {
+                width: 50%;
+            }
+            .btn-margin-md {
+                margin-left: 30vw;
+            }
+            
+
+        }
+    </style>
+
+
 </head>
 
 <body class="d-flex flex-column text-center" cz-shortcut-listen="true">
-    <!-- Lading Screen -->
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column " id="conference-details">
 
-        <header class="mb-auto mt-2">
-            <div>
-                <h3 class="float-md-start mb-0 text-white">Go Suka</h3>
-                <nav class="nav nav-masthead justify-content-center float-md-end mt-2">
+    <!-- Lading Screen -->
+    <div class="cover-container d-flex w-100 p-3 mx-auto flex-column" id="conference-details">
+
+        <header class="mt-2 my-m">
+            <div class="d-lg-flex flex-row justify-content-between mx-5 align-items-start navbar-container-head">
+                <h3 class="float-md-start mb-0 text-white w-lg-25 go-suka-title">Go Suka</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end mt-2 navbar-text-head">
                     <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#conference-details">Home</a>
                     <a class="nav-link fw-bold py-1 px-0" href="#save-spot-form">Réservation</a>
                     <a class="nav-link fw-bold py-1 px-0" href="#infoline-section">Infoline</a>
                 </nav>
+                <p class="lead">
+                    <a href="#save-spot-form" class="btn btn-lg btn-light fw-bold border-white bg-white save-spot-lg-btn">Réserve ta place</a>
+                </p>
             </div>
         </header>
 
-        <main class="px-3">
+        <h1 class=" my-4 text-white text-start ms-5 scolariser-text pb-5">Scolarisons les Futurs  <span style="color: #F8DE22;">Étoiles</span> <br class="line-break-small"> Du Burkina</h1>
 
-            <h1 class="my-4 text-white pb-5">Scolarisons les Futurs <span style="color: #F8DE22;">Étoiles</span> Du Burkina</h1>
+        <div class="me-md-5">
+            <h1 class="text-white px-4 text-end pt-lg-4">Conférence</h1>
+            <h4 class="text-white px-4 fw-light text-end">Date : Vendredi 28 Août</h4>
+            <h4 class="text-white px-4 fw-light mb-5 text-end pb-lg-5">Time : 8h30~11h30</h4>
+        </div>
 
-            <h1 class="text-white">Conférence</h1>
-            <h4 class="text-white px-4 fw-light">Date : Vendredi 28 Août</h4>
-            <h4 class="text-white px-4 fw-light mb-5">Time : 8h30~11h30</h4>
+        <div class="ms-5 d-md-flex flex-row align-items-center">
 
-            <div class="container bg-white my-5 py-4 rounded-5 conference-link" style="width: auto;" >
-                <h4 class="text-dark px-4 mb-5">Lien de la conférence virtuelle</h4>
-                <h5 class="text-dark">http://bit.ly/3EjxOC1</h5>
+            <div class="d-md-flex flex-column theme-container">
+                <h1 class="text-white text-start">Thème</h1>
+                <p class="lead text-white text-start theme-text ">
+                    Cadre de concertation sur la contribution
+                    citoyenne a l'éducation des enfants déplacés internes au Burkina Faso.
+                </p>
             </div>
 
-            <h1 class="text-white">Thème</h1>
+            <div class="me-5 pe-4 text-center">
+                <p class="lead">
+                    <a href="#save-spot-form" class="btn btn-lg btn-light fw-bold border-white bg-white">Réserve ta place</a>
+                </p>
+            </div>
+        </div>
 
-            <p class="lead text-white">
-                Cadre de concertation sur la contribution
-                citoyenne a l'éducation des enfants déplacés internes au Burkina Faso.
-            </p>
-            <p class="lead">
-                <a href="#save-spot-form" class="btn btn-lg btn-light fw-bold border-white bg-white">Réserve ta place</a>
-            </p>
-        </main>
     </div>
 
     <!-- CONTACT FORM -->
@@ -151,9 +205,9 @@
                 <!-- SECTION 1 -->
                 <h2></h2>
                 <section>
-                    <div class="inner">
+                    <div class="inner flex-wrap justify-content-center">
 
-                        <div class="image-holder">
+                        <div class="image-holder my-lg-auto" style="height: min-content;">
                             <img src="images/children_in_school.jpg" class="img-children" alt="">
                         </div>
                         <div class="form-content form-reserv-spot mb-1">
@@ -196,7 +250,7 @@
                                 </div>
                                 <div class="input-group">
                                     <div class="input-group-text">
-                                        <input class="form-check-input mt-0" type="radio" name="lifeOccupation"  value="ActiveWorker" id="worker-choice-occupation" aria-label="Radio button for following text input" onclick="disableStudent()">
+                                        <input class="form-check-input mt-0" type="radio" name="lifeOccupation" value="ActiveWorker" id="worker-choice-occupation" aria-label="Radio button for following text input" onclick="disableStudent()">
                                         <span class="ms-2">Fonctionnaire</span>
                                     </div>
                                     <input type="text" id="job-name-field" disabled="true" name="jobName" class="form-control border-primary-subtle" style=" border-left:2px solid #e6e6e6; border-radius:10px 10px 10px 10px;" placeholder="Votre emploi" aria-label="Text input with radio button">
@@ -228,7 +282,7 @@
                                         <label class="form-check-label" for="inlineCheckbox3">Association</label>
                                     </div>
 
-                                    <div class="form-check col-sm-12 col-md d-inline-flex"  id="inputAssociationVisibility" style="visibility: hidden;">
+                                    <div class="form-check col-sm-12 col-md d-inline-flex" id="inputAssociationVisibility" style="visibility: hidden;">
                                         <input class="form-control mx-5" name="associationName" id="associationInputText" type="text" placeholder="Nom de l'association">
                                     </div>
 
@@ -237,7 +291,7 @@
 
                         </div>
 
-                        <button type="submit" class="btn btn-primary mb-5 fs-5" onclick="verifyFonction()">Réserve ta place</button>
+                        <button type="submit" class="btn-margin-md btn btn-primary mb-5 fs-5" onclick="verifyFonction()">Réserve ta place</button>
                     </div>
 
                 </section>
@@ -255,8 +309,8 @@
                     </svg>
                     +226 25-46-63-66
                 </li>
-                <li class="nav-item fs-2 d-flex align-items-center justify-content-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="height: 7vw; margin:auto 0px;"   alt=""> 52-56-27-27 / 64-81-01-18 </li>
-                <li class="nav-item fs-2"> 
+                <li class="nav-item fs-2 d-flex align-items-center justify-content-center gap-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="height: 7vw; margin:auto 0px;" alt=""> 52-56-27-27 / 64-81-01-18 </li>
+                <li class="nav-item fs-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope me-2" viewBox="0 0 16 16">
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                     </svg>
@@ -296,7 +350,6 @@
             document.getElementById("job-name-field").disabled = true;
 
         }
-
     </script>
 </body>
 
