@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votre place est reservé!</title>
     <link rel="icon" type="image/x-icon" href="./images/logo_pdf.png">
-    
+
     <style>
         body {
             display: flex;
@@ -37,12 +37,9 @@
     ?>
 
     <div class="px-1 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold text-body-emphasis"> Merci, <?php echo $name ?> </h1>
+        <h1 class="display-5 fw-bold text-body-emphasis"> Merci, <?php echo ucfirst($name) ?> </h1>
         <div class="mx-auto">
-            <p class="lead mb-4 pb-5">On a bien noté ton nom pour la réservation. Merci encore!</p>
-
-            <h1 class="display-5 fw-bold text-body-emphasis"> Voici le lien de la conférence virtuelle </h1>
-            <p class="lead mb-4 pb-5"><a href="http://bit.ly/3EjxOC1">http://bit.ly/3EjxOC1</a></p>
+            <p class="lead mb-4 pb-5">On a bien noté ton nom pour la réservation. Merci encore! <br> Le lien de la conférence suivra dans ta boite e-mail</p>
 
         </div>
     </div>

@@ -24,6 +24,9 @@ if(!(isset($_POST['associationName']))) {
     $associationName = 'none';
 }
 
+$name = ucfirst($name);
+$firstName = ucfirst($firstName);
+
 require "vendor/autoload.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -36,11 +39,11 @@ $mail->SMTPAuth = true;
 $mail->Host = "smtp.gmail.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
-$mail->Username = "sidibekagaks@gmail.com";
-$mail->Password = 'ewdonrdkhkkxwcrx';
+$mail->Username = "gosukabfbot@gmail.com";
+$mail->Password = 'rhmmqvatvjqqxpfj';
 
-$mail->setFrom($email, $name);
-$mail->addAddress("sidibekagaks@gmail.com", "botRegistration");
+$mail->setFrom("gosukabfbot@gmail.com", "Go-Suka Bot");
+$mail->addAddress("gosukabfbot@gmail.com", "botRegistration");
 
 $mail->Subject = "Reservation pour " . $name . ", " . $firstName ;
 $mail->Body = "$name, $firstName a reserver son spot, Voici ces informations : 
@@ -51,6 +54,21 @@ $mail->Body = "$name, $firstName a reserver son spot, Voici ces informations :
     Endroit ou il a entendu parler de la conference : $discoveryPlace
     Nom de l'association (Si connu par une association) : $associationName
     ";
+
+$mail->send();
+
+$mail->setFrom("gosukabfbot@gmail.com", "Go Suka");
+$mail->addAddress("sidibekagaks@gmail.com", $firstName);
+
+$mail->Subject = "Merci pour ta reservation " . $name . "!";
+$mail->Body = "Nous avons bien recu ton formulaire tout rempli, Merci à toi et on t'attend le Vendredi. 
+                           
+Voici le lien de la conférence si tu décide d'assister à celle en ligne :
+https://us06web.zoom.us/j/81818547681?pwd=d21ZTXQ5Wm9EN1E5UmZ3RkIwYTgwZz09
+
+
+Bonne journée!
+";
 
 $mail->send();
 
