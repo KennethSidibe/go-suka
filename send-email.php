@@ -54,4 +54,7 @@ $mail->Body = "$name, $firstName a reserver son spot, Voici ces informations :
 
 $mail->send();
 
+header("Location: email-sent.php?name=" . urlencode($name));
+exit();
+
 ?>
